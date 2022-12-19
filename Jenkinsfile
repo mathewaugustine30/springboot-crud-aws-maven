@@ -12,7 +12,7 @@ pipeline {
                 echo 'Hello World'
             }
         }
-                stage('Deploy') {
+                stage('Deployment') {
             steps {
                 echo 'Hello World'
             }
