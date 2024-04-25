@@ -19,7 +19,7 @@ pipeline {
                 echo 'Testing crud'
             }
         }
-               stage('Test') {
+               stage('Deplyment') {
                     steps {
         sh 'mvn deploy'
                         echo 'Deploying crud'
