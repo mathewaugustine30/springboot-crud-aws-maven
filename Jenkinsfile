@@ -9,14 +9,23 @@ pipeline {
         }
                 stage('Build') {
             steps {
-                echo 'Hello World'
+             sh 'mvn clean package'
+                echo 'Building crud'
             }
         }
-                stage('Deployment') {
+                stage('Test') {
             steps {
-                echo 'Hello World'
+             sh 'mvn test'
+                echo 'Testing crud'
             }
         }
+               stage('Test') {
+                    steps {
+        sh 'mvn deploy'
+                        echo 'Deploying crud'
+                    }
+                }
+
     }
     post{
         always{
