@@ -29,8 +29,7 @@ pipeline {
     }
     post{
         always{
-
-            emailext body: 'This Build got completed', subject: 'Build Completed', to: 'mathewaugustine30@gmail.com'
+           echo 'Always me......'
         }
     }
 }
