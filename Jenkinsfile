@@ -19,10 +19,10 @@ pipeline {
                 echo 'Testing crud'
             }
         }
-               stage('Deplyment') {
+               stage('Install') {
                     steps {
-        bat 'mvn deploy'
-                        echo 'Deploying crud'
+        bat 'mvn install'
+                        echo 'Installing... crud'
                     }
                 }
 
