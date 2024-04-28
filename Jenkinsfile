@@ -28,8 +28,9 @@ pipeline {
 
     }
     post{
-        always{
+        success{
            echo 'Always me......'
+           archiveArtifacts 'target/*.jar'
         }
     }
 }
